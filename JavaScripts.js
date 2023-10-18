@@ -1,28 +1,35 @@
-var fact = document.getElementById('funFact');
 
 
 
-function changefact(){
+
+
+function changeFact(){
+    var fact = document.getElementById('funFact');
+    var factDiv = document.getElementById('factDiv')
   if (fact.innerHTML.match("Click the button for the first fun fact!")){
     fact.innerHTML = "FIRST FACT";
-    fact.style.backgroundColor = "#ff00a8"
-
+    factDiv.style.backgroundColor = "#ff00a8"
+    fact.style.color = "white"
   }
   else if (fact.innerHTML.match("FIRST FACT")){
     fact.innerHTML = "SECOND FACT";
-    fact.style.backgroundColor = "#ff3184"
+    factDiv.style.backgroundColor = "#ff3184"
+    fact.style.color = "white"
   }
   else if (fact.innerHTML.match("SECOND FACT")){
-    fact.innerHTML = "What even is a fact?!?!?!";
-    fact.style.backgroundColor = "#ff5a66"
+    fact.innerHTML = "THIRD FACT";
+    factDiv.style.backgroundColor = "#ff5a66"
+    fact.style.color = "white"
   }
-  else if (fact.innerHTML.match("What even is a fact?!?!?!")){
-    fact.innerHTML = "wow";
-    fact.style.backgroundColor = "#ff7d52"
+  else if (fact.innerHTML.match("THIRD FACT")){
+    fact.innerHTML = "FOURTH FACT";
+    factDiv.style.backgroundColor = "#ff7d52"
+    fact.style.color = "white"
   }
   else{
-    fact.innerHTML = "The Chief Extra Oatmeal";
-    fact.style.background= "#ff9c49"
+    fact.innerHTML = "You've read all the facts! Click the button to start again";
+    factDiv.style.background= "#ff9c49"
+    fact.style.color = "white"
   }
   }
 
