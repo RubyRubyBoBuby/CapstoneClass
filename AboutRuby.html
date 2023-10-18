@@ -38,9 +38,28 @@
           </form>
         </div>
       </nav>
-    <h1>About me</h1>
-<h2>CEO, Founder, and tyrant: Ruby Donaldson (she/her)</h2>
-<img src="Bug-Screenshot.png" style="height: 10em;text-align: right;">
+    <p><h1 style="text-align:center">About me</h1></p><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h2>CEO, Founder, and Tyrant: Ruby Donaldson (she/her)</h2>
+          <div class="border rounded border-dark pl-2">paragraph about me and other stuff like that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nesciunt cum quia eius dolorum ea. Ut cupiditate voluptates laborum vitae ducimus commodi adipisci, facilis facere molestiae, asperiores illo fugit. Corrupti?</div>
+        </div>
+        <div class="col-sm">
+          <figure class="figure">
+            <img src="Bug-Screenshot.png" style="height: 15em;text-align: right;" class="figure-img img-fluid rounded" alt="A Bug sitting on a keyboard, presumably typing. This is me, coding the website.">
+            <figcaption class="figure-caption text-center">Photograph of Ruby Donaldson coding this website</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div style="text-align: center;">
+      <div style="text-align:center;"><h1>Fun facts about Ruby!</h1></div>
+      <div class="border rounded border-dark border-3" style="text-align:center"><p id="funFact" onclick="changeFact()">Click the button for the first fun fact!</p></div>
+      <br><button style="text-align: center;" onclick="changeFact()">Click here for a new fact!</button>
+      </div>
+    </div>
+
+    <script src="JavaScripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
